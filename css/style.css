@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Avenir Next Regular';
+  src: url("../font/avenir-next-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("../font/AvenirNextLTPro-Regular.otf") format("woff2"), url("../font/avenir-next-regular.woff") format("woff"), url("../font/avenir-next-regular.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+@font-face {
+  font-family: 'Avenir Next Bold';
+  src: url("../font/avenir-next-bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("../font/AvenirNextLTPro-Bold.otf") format("woff2"), url("../font/avenir-next-bold.woff") format("woff"), url("../font/avenir-next-bold.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+@font-face {
+  font-family: 'Avenir Next Thin';
+  src: url("../font/avenir-next-thin.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/avenir-next-thin.eot?#iefix") format("embedded-opentype"), url("../font/avenir-next-thin.woff") format("woff"), url("../font/avenir-next-thin.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+@font-face {
+  font-family: 'Avenir Next Italic';
+  src: url("../font/avenir-next-italic.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/avenir-next-italic.eot?#iefix") format("embedded-opentype"), url("../font/AvenirNextLTPro-It.otf") format("woff2"), url("../font/avenir-next-italic.woff") format("woff"), url("../font/avenir-next-italic.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+.heading1, .heading2, .heading3, .heading4, .heading5, .heading6, body, .button, .formLabel, input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+select,
+textarea {
+  font-family: 'Avenir Next Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal; }
+
+.italic {
+  font-family: 'Avenir Next Italic'; }
+
+.thin {
+  font-family: 'Avenir Next Thin'; }
+
+.bold {
+  font-family: 'Avenir Next Bold'; }
+
+.highlight {
+  color: #FF005B; }
+
+.strikethrough {
+  color: #9B9B9B;
+  text-decoration: line-through; }
+
+.nowrap {
+  white-space: nowrap; }
+
+.wrap {
+  white-space: initial; }
+
+.wordBreak {
+  word-break: break-all; }
+
+.heading1, .heading2, .heading3, .heading4, .heading5, .heading6 {
+  display: block;
+  font-family: "Avenir Next Regular", Arial, sans-serif;
+  font-weight: 800;
+  line-height: 1.3;
+  /*margin: em(16) 0;*/
+  color: #232129; }
+
+.heading1 {
+  font-size: 2em; }
+
+.heading2 {
+  font-size: 1.75em; }
+
+.heading3 {
+  font-size: 1.5em; }
+
+.heading4 {
+  font-size: 1.25em; }
+
+.heading5 {
+  font-size: 1.125em; }
+
+.heading6 {
+  font-size: 1em; }
+
+.headingLabel {
+  display: block;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #FF005B;
+  margin-bottom: 0;
+  text-transform: uppercase; }
+
+.headingDescription {
+  display: block;
+  font-size: 1.125em;
+  color: #232129;
+  line-height: 1.3;
+  margin-bottom: 1em; }
+
+.headingLabel + .heading1 {
+  margin-top: 0.25em; }
+
+@media only screen and (max-width: 568px) {
+  .heading1 {
+    font-size: 2em;
+    margin: 0.5em 0 0; }
+  .heading2 {
+    font-size: 1.75em; }
+  .heading3 {
+    font-size: 1.5em;
+    line-height: 1.5; }
+  .heading4 {
+    font-size: 1.25em; }
+  .heading5 {
+    font-size: 1.125em; } }
+
+body {
+  background-color: #F8F8F8;
+  font-size: 17px;
+  line-height: 1.4; }
+
+.container {
+  position: relative;
+  display: block;
+  margin: 1.25rem auto;
+  max-width: 64rem; }
+
+.wrapper {
+  position: relative;
+  margin: 0; }
+
+.portal {
+  position: relative; }
+
+.pageTitle {
+  position: absolute;
+  top: -562.5em;
+  left: -562.5em; }
+
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    margin: 0 1rem; } }
+
+.button {
+  -webkit-transition: ease 500ms background-color;
+  /* Chrome 4-25, Safari 3.1-6, iOS 3.2-6.1, Android 2.1-4.3, BlackBerry 7 */
+  -moz-transition: ease 500ms background-color;
+  /* FireFox 4-15 */
+  -o-transition: ease 500ms background-color;
+  /* Opera    10.5-11.5 */
+  transition: ease 500ms background-color;
+  /* W3C - Chrome 26+, Safari 6.1+, FF 16+, IE 10+, Opera 12.1+, iOS 7+, Android 4.4+, BlackBerry 10+ */
+  display: block;
+  background-color: #FF005B;
+  border: 0;
+  border-radius: 0.25rem;
+  font-size: 1em;
+  color: #FFF;
+  cursor: pointer;
+  outline: none;
+  padding: 0.875em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-tap-highlight-color: transparent; }
+  .button:hover {
+    -webkit-transition: ease 500ms background-color;
+    /* Chrome 4-25, Safari 3.1-6, iOS 3.2-6.1, Android 2.1-4.3, BlackBerry 7 */
+    -moz-transition: ease 500ms background-color;
+    /* FireFox 4-15 */
+    -o-transition: ease 500ms background-color;
+    /* Opera    10.5-11.5 */
+    transition: ease 500ms background-color;
+    /* W3C - Chrome 26+, Safari 6.1+, FF 16+, IE 10+, Opera 12.1+, iOS 7+, Android 4.4+, BlackBerry 10+ */
+    background-color: #ff0d63; }
+  .button:active {
+    -webkit-transition: ease 500ms background-color;
+    /* Chrome 4-25, Safari 3.1-6, iOS 3.2-6.1, Android 2.1-4.3, BlackBerry 7 */
+    -moz-transition: ease 500ms background-color;
+    /* FireFox 4-15 */
+    -o-transition: ease 500ms background-color;
+    /* Opera    10.5-11.5 */
+    transition: ease 500ms background-color;
+    /* W3C - Chrome 26+, Safari 6.1+, FF 16+, IE 10+, Opera 12.1+, iOS 7+, Android 4.4+, BlackBerry 10+ */
+    background-color: #f20056; }
+  .button[disabled] {
+    -webkit-transition: ease 500ms background-color;
+    /* Chrome 4-25, Safari 3.1-6, iOS 3.2-6.1, Android 2.1-4.3, BlackBerry 7 */
+    -moz-transition: ease 500ms background-color;
+    /* FireFox 4-15 */
+    -o-transition: ease 500ms background-color;
+    /* Opera    10.5-11.5 */
+    transition: ease 500ms background-color;
+    /* W3C - Chrome 26+, Safari 6.1+, FF 16+, IE 10+, Opera 12.1+, iOS 7+, Android 4.4+, BlackBerry 10+ */
+    background-color: #D8D8D8; }
+
+.submitButton {
+  margin: 3.5rem auto 0;
+  width: 100%; }
+
+.reloadPage {
+  margin-top: 1.25rem; }
+
+@media only screen and (min-width: 769px) {
+  .submitButton {
+    width: 14.375rem; } }
+
+.loader {
+  /*** Fallback for SVG into PNG for old browsers ***/
+  background: url("../../assets/images/spinning-loader.png");
+  background: url("../../assets/images/spinning-loader.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+  /*background-image: url('../../assets/images/spinning-loader.svg');*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5%;
+  height: 3rem;
+  width: 100%; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+    line-height: 0; }
+  .clearfix:after {
+    clear: both; }
+
+.hidden {
+  display: none; }
+
+.shown {
+  display: block; }
+
+.finding {
+  text-align: center; }
