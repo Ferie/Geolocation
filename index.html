@@ -3,13 +3,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Geolocation</title>
+        <title>Geolocation with Google Maps</title>
         <base href="/Geolocation/">
         <link type="text/css" rel="stylesheet" href="css/style.css">
-        <script src="js/geolocation_script.js"></script>
     </head>
 
     <body>
+        <div id="map"></div>
+
         <div class="container">
             <div class="wrapper">
                 <div class="portal">
@@ -22,5 +23,8 @@
                 </div>
             </div>
         </div>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVBe3-WaND5604-QtBku3vybyV0kXAOPU&callback=initMap"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
